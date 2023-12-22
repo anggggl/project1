@@ -1,1 +1,31 @@
 Cмирнова Ангелина
+
+
+#include <iostream>
+#include <cmath>
+
+int main()
+{
+setlocale(LC_ALL, "Russian");
+double x, y;
+std::cout << "x=";
+std::cin >> x;
+std::cout << "y=";
+std::cin >> y;
+
+bool f;
+
+ f = (((x > 1) && (x <7)) && ((y>(-x+5)) && (y < (-x + 11)) && (y < (x+3)) && (y>(x-3))));
+
+if (f)
+{
+std::cout << "Точка принадлежит закрашенной области." << std::endl;
+}
+else
+{
+std::cout << "Точка не принадлежит закрашенной области." << std::endl;
+}
+
+system("pause");
+return 0;
+}
